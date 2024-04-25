@@ -120,6 +120,11 @@ button:focus {
   color: #ffffff;
 }
 
+.navbar-nav .nav-item:hover .nav-link {
+  color: #0160bd;
+  transition: background-color 0.3s ease;
+}
+
 .button-chat {
   position: fixed;
   bottom: 20px;
@@ -210,7 +215,7 @@ button:focus {
   text-transform: uppercase;
   color: #fff;
   font-weight: 600;
-  background: #f3c300;
+  background: #0160bd;
   padding: 5px 30px;
 }
 
@@ -902,7 +907,7 @@ button:focus {
 }
 
 .facilities_item .sec_h4 i {
-  color: #f3c300;
+  color: #0160bd;
   font-size: 24px;
   line-height: 38px;
   display: inline-block;
@@ -3566,7 +3571,7 @@ h6 {
 }
 
 .single-footer-widget ul li a:hover {
-  color: #f3c300;
+  color: #0160bd;
 }
 
 .single-footer-widget .instafeed {
@@ -3619,7 +3624,7 @@ h6 {
 }
 
 .single-footer-widget .sub-btn {
-  background: #f3c300;
+  background: #0160bd;
   color: #fff;
   font-weight: 300;
   border-radius: 0;
@@ -3652,7 +3657,7 @@ h6 {
 }
 
 .footer-bottom .footer-text a {
-  color: #f3c300;
+  color: #0160bd;
 }
 
 .footer-bottom .footer-social {

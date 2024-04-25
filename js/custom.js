@@ -22,6 +22,43 @@
   }
   navbarFixed();
 
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      var scrollPos = $(document).scrollTop();
+      $('.section').each(function () {
+        var offsetTop = $(this).offset().top;
+        var outerHeight = $(this).outerHeight(true);
+        if (scrollPos >= offsetTop && scrollPos < offsetTop + outerHeight) {
+          var id = $(this).attr('id');
+          $('.navbar-nav').find('.nav-item').removeClass('active');
+          $('.navbar-nav')
+            .find('[href="#' + id + '"]')
+            .parent()
+            .addClass('active');
+        }
+      });
+    });
+  });
+
+  $(document).ready(function () {
+    // Smooth scroll untuk setiap item navbar
+    $('.navbar-nav a').on('click', function (event) {
+      if (this.hash !== '') {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          800,
+          function () {
+            window.location.hash = hash;
+          }
+        );
+      }
+    });
+  });
+
   document.getElementById('viewMoreBtn').addEventListener('click', function (event) {
     event.preventDefault(); // Menghentikan perilaku default dari link
 
