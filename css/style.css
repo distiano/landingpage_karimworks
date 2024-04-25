@@ -120,6 +120,30 @@ button:focus {
   color: #ffffff;
 }
 
+.button-chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.button-chat a {
+  background-color: #25d366;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.button-chat a:hover {
+  background-color: #128c7e;
+}
+
+.contact-area {
+  border-radius: 10px;
+  /* background-image: url(../image/banner/pexels-hasanalbari-1229865.jpg);
+  background-size: cover; */
+  background-color: #04091e;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
@@ -232,7 +256,7 @@ button:focus {
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
   z-index: -1;
-  background: #00000094;
+  background: #000000bb;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -789,9 +813,7 @@ button:focus {
 
 .accomodation_item .hotel_img {
   position: relative;
-  margin-bottom: 10px;
   overflow: hidden;
-  border-radius: 10px;
 }
 
 .accomodation_item .hotel_img .desc_katalog {
@@ -800,10 +822,12 @@ button:focus {
   left: 0;
   opacity: 0;
   height: 100%;
+  border-radius: 10px;
+  border: 1px solid #999999;
 }
 
 .accomodation_item .hotel_img .desc_katalog:hover {
-  opacity: 90%;
+  opacity: 95%;
 }
 
 .accomodation_item .hotel_img img {
@@ -869,6 +893,7 @@ button:focus {
   padding: 31px 40px 37px;
   color: #fff;
   margin-bottom: 30px;
+  height: 250px;
 }
 
 .facilities_item .sec_h4 {

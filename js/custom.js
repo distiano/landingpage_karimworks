@@ -22,6 +22,25 @@
   }
   navbarFixed();
 
+  document.getElementById('viewMoreBtn').addEventListener('click', function (event) {
+    event.preventDefault(); // Menghentikan perilaku default dari link
+
+    var product = document.querySelectorAll('.product-hidden');
+
+    // Mengubah teks tombol dan menampilkan atau menyembunyikan elemen-elemen 'product-hidden'
+    if (this.textContent === 'View More') {
+      product.forEach(function (item) {
+        item.style.display = 'block';
+      });
+      this.textContent = 'View Less';
+    } else {
+      product.forEach(function (item) {
+        item.style.display = 'none';
+      });
+      this.textContent = 'View More';
+    }
+  });
+
   function testimonialSlider() {
     if ($('.testimonial_slider').length) {
       $('.testimonial_slider').owlCarousel({
